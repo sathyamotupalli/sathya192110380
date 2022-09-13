@@ -1,0 +1,22 @@
+#include<stdio.h>
+int sum(int a,int b,int c)
+{
+	int temp;
+	temp=a;
+	a=c;
+	c=b;
+	b=temp;
+	printf("swap of two numbers is = %d %d %d",a,b,c);
+}
+int main()
+{
+	int n,m,o,result;
+	printf("enter the number= ");
+	scanf("%d",&n);
+	printf("enter the number= ");
+	scanf("%d",&m);
+	printf("enter the number= ");
+	scanf("%d",&o);
+	sum(n,m,o);
+	
+}
