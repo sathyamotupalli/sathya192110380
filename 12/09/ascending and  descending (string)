@@ -1,0 +1,47 @@
+#include<stdio.h>
+#include<string.h>
+void main()
+    {
+    int i,j,k,n;
+    char name[10][10],tname[10][10],temp[10];
+    printf("How many numbers you want to store:=");
+    scanf("%d",&k);
+    printf("1 for asec\n");
+    printf("2 for desc\n");
+    printf("enter the choice=");
+    scanf("%d",&n);
+    printf("Enter numbers for in an array:=");
+       fflush(stdin);
+
+    for(i=0;i<k;i++)
+       {
+       scanf("%s",name[i]);
+       strcpy(tname[i],name[i]);
+       }
+    for(i=1;i<k;i++)
+       {
+       for(j=1;j<k;j++)
+          {
+          if(strcmp(name[j],name[j-1])<0)
+          {
+          strcpy(temp,name[j-1]);
+          strcpy(name[j-1],name[j]);
+          strcpy(name[j],temp);
+          }
+          }
+       }
+    if(n==1){
+    printf("The sorted names in alphabetical order [A to Z Format] are:\n");
+    printf("\tOldlist\t\tNew list\n\n");
+    for(i=0;i<k;i++)
+        {
+        printf("\t%s\t\t%s\n",tname[i],name[i]);
+        }}
+    else if(n==2){
+    printf("\n\nThe sorted names in [Z to A Format] are:\n");
+    for(i=k-1;i>=0;i--)
+        {
+        printf("\t%s\n",name[i]);
+        }}
+    return 0;
+    }
