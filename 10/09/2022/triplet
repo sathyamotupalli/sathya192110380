@@ -1,0 +1,29 @@
+#include<stdio.h>
+#include<math.h>
+int main()
+{
+	int a,b,c,d;
+	printf("enter the limit= ");
+	scanf("%d",& a);
+	printf("enter the first number= ");
+	scanf("%d",& b);
+	if(a>b){
+		printf("enter the secound number= ");
+		scanf("%d",& c);
+		if(a>c)
+		{
+		d=sqrt((b*b)+(c*c));
+		printf("the pythograous triplet is\n (%d\t%d\t%d)",b,c,d);
+		}
+		else
+		{
+			printf("re enter the number in limit");
+		}
+		
+	}
+	else
+	{
+		printf("re enter the number in limit");
+	}
+	
+}
