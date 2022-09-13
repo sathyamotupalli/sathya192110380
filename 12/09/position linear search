@@ -1,0 +1,20 @@
+#include<stdio.h>
+int main()
+{
+	int a,b[10],i,j,c;
+	printf("enter the number elements = ");
+	scanf("%d",& a);
+	for (i=1;i<=a;i++)
+	{
+		printf("enter the values= ");
+		scanf("%d", & b[i]);
+	}
+	printf("\nenter the position=");
+	scanf("%d",&c);
+	if (a>=c){
+	printf("the value in the position is= %d",b[c]);}
+	else
+	{
+		printf("invaild position");
+	}
+}
