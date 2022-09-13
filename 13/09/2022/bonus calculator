@@ -1,0 +1,43 @@
+#include<stdio.h>
+int main()
+{
+	int a,b,c;
+	printf("1 for grade A\n");
+	printf("2 for grade B\n");
+	printf("enter the grade= ");
+	scanf("%d",& a);
+	printf("enter the salary= ");
+	scanf("%d",& b);
+	if (b<1000)
+	{
+		if (a==1)
+		{
+			c=b*7/100;
+			printf("the bonus amount of employee is= %d",c);
+			printf("total salary= %d",c+b);
+		}
+		if (a==2)
+		{
+			c=b*12/100;
+			printf("the bonus amount of employee is= %d",c);
+			printf("total salary= %d",c+b);
+			
+		}
+	}
+	if (b>=10000)
+	{
+		if (a==1)
+		{
+			c=b*5/100;
+			printf("the bonus amount of employee is= %d\n",c);
+			printf("total salary= %d",c+b);
+		}
+		if (a==2)
+		{
+			c=b*10/100;
+			printf("the bonus amount of employee is= %d",c);
+			printf("total salary= %d",c+b);
+			
+		}
+	}
+}
