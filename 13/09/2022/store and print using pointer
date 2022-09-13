@@ -1,0 +1,13 @@
+#include<stdio.h>
+int main()
+{
+	int a,b[10],i;
+	printf("enter total nnumber of elements= ");
+	scanf("%d",&a);
+	for (i=1;i<=a;i++){
+		printf("enter the values= ");
+		scanf("%d",&b[i]);}
+	for (i=1;i<=a;i++){
+		printf("%d element in an array= %d\n",i,b[i]);
+	}
+}
