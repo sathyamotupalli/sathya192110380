@@ -1,0 +1,17 @@
+#include<stdio.h>
+int sum(int a,int b)
+{
+	int temp;
+	temp=a+b;
+	printf("sum of two numbers is = %d",temp);
+}
+int main()
+{
+	int n,m;
+	printf("enter the number= ");
+	scanf("%d",&n);
+	printf("enter the number= ");
+	scanf("%d",&m);
+	sum(n,m);
+	
+}
