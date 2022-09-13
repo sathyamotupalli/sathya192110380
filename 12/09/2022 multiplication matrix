@@ -6,6 +6,7 @@ int main()
 	scanf("%d",&n);
 	printf("enter the number of columns= ");
 	scanf("%d",& m);
+	if (n && m >=1){
 	printf("\nENTER VALUES FOR MATRIX A:\n");
 	for(i=0;i<n;i++)
 		for(j=0;j<m;j++)
@@ -25,5 +26,7 @@ int main()
 		for(j=0;j<m;j++)
 			printf("%5d",c[i][j]);
 		printf("\n");
-	}
+	}}
+	else{	
+	printf("\ninvaild input");}
 }
