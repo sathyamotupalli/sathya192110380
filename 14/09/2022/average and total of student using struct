@@ -1,0 +1,25 @@
+#include<stdio.h>
+struct percentage
+{
+	int a;int b;int c;
+	int d=a+b+c;
+	int e=d/4;
+};
+int main()
+{
+	int n;
+	char m[10];
+	printf("enter the roll number= ");
+	scanf("%d",& n);
+	printf("enter the name= ");
+	scanf("%s",& m);
+	struct percentage p;
+	printf("enter the 1st subject marks= ");
+	scanf("%d",& p.a);
+	printf("enter the 2nd subject marks= ");
+	scanf("%d",& p.b);
+	printf("enter the 3rd subject marks= ");
+	scanf("%d",& p.c);
+	printf("the total marks= %d\n",p.d);
+	printf("the average of the student= %d\n",p.e);
+}
