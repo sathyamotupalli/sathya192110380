@@ -1,0 +1,23 @@
+#include<stdio.h>
+struct sum
+{
+	int a;int b;int c;int d; int e;int n;int m;
+};
+int main()
+{
+	struct sum s;
+	printf("\ENTER THE FIRST COMPLEX NUMBER\n");
+	printf("\n ENTER THE REAL PART OF COMPLEX NUMBER= ");
+	scanf("%d",&s.a);
+	printf("ENTER THE IMAGINARY PART OF COMPLEX NUMBER= ");
+	scanf("%d",&s.b);
+	printf("\nENTER THE SECOUND  COMPLEX NUMBER\n");
+	printf(" ENTER THE REAL PART OF COMPLEX NUMBER= ");
+	scanf("%d",&s.c);
+	printf("ENTER THE IMAGINARY PART OF COMPLEX NUMBER= ");
+	scanf("%d",&s.d);
+	s.n=s.a+s.c;
+	s.m=s.b+s.d;
+	printf("\nthe sum of real part= %d",s.n);
+	printf("\nthe sum of imaginary part is= %d",s.m);
+}
