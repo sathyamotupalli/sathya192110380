@@ -1,0 +1,23 @@
+#include<stdio.h>
+struct student 
+{
+	int *rollno;char *name[20];int *marks;
+}s[10];
+int main()
+{
+	int a,i;
+	printf("enter the number of  student");
+	scanf("%d",& a);
+	for(i=0;i<a;i++){
+	printf("enter the rollno = ");
+	scanf("%d",&s[i].rollno );
+	printf("enter the name = ");
+	scanf("%s",&s[i].name);
+	printf("enter the marks = ");
+	scanf("%d",&s[i].marks);}
+	for (i=0;i<a;i++){
+	printf("\nroll number= %d",s[i].rollno);
+	printf("\nname= %s",s[i].name);
+	printf("\nmarks =%d\n",s[i].marks);}
+	return 0;
+}
