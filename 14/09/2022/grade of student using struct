@@ -1,0 +1,33 @@
+#include<stdio.h>
+struct marks
+{
+	int a;int b; int c;int d;int sum;int avg;
+};
+int main()
+{
+	struct marks m;
+	printf("enter the python marks= ");
+	scanf("%d",&m.a);
+	printf("enter the c prgraming marks= ");
+	scanf("%d",&m.b);
+	printf("enter the maths marks= ");
+	scanf("%d",&m.c);
+	printf("enter the python marks= ");
+	scanf("%d",&m.d);
+	m.sum=m.a+m.b+m.c+m.d;
+	m.avg=m.sum/4;
+	printf("\ntotal = %d",m.sum);
+	printf("\naverage= %d\n",m.avg);
+	if(75< m.avg){
+		printf("DISTINCTION");
+	}	
+	else if(60<=m.avg<=75){
+		printf("FIRST DIVISON");
+	}
+	else if(50<=m.avg<60){
+		printf("SECOUND DIVISION");
+	}
+	else if (50>m.avg){
+		printf("FAIL");
+	}
+}
