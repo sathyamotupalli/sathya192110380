@@ -11,7 +11,7 @@ int main()
     printf("factorial of the numberis= %d\n",c);
     for(i=1;i<=a;i++)
     {
-        if(i%2==0)
+        if(a%i==0)
         {
             printf("the factors of number are=%d\n",i);
         }
